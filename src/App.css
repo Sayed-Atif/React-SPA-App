@@ -1,38 +1,143 @@
-.App {
+/* Navigation styles goes here: */
+.app-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  /* width: 100%; */
+}
+
+.app-nav a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.app-nav .logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.app-nav .logo img{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  width: 3rem;
+}
+
+.app-nav .nav-links{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-nav .nav-links li{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.app-nav .nav-links li:hover{
+  text-decoration: underline;
+}
+
+/*Home Page Style*/
+
+.home{
+    
+  border: solid salmon 3px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15%;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home .heading{
+  color: aqua;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home .p1{
+  color: chocolate;
+  font-weight: 200;
+  font: 1em sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.home .p2{
+  color: blueviolet;
+  font-style: oblique;
+  font: 1.5rem san-serif;
+}
+
+.home .btn{
+  padding: 10px;
+  margin: 5px;
+  background-color: blue;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+
+
+/*Contact Page Style*/
+.contact{
+  position: absolute;
+  color: darkcyan;
+  font-style: inherit;
+  left: 40%;
+  top: 100px;
+  border: solid olive;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.contact .c_btn{
+  padding: 2px;
+  margin: 5px;
+  background-color:darkolivegreen;
+  border-radius: 10%;
+  color: aquamarine;
+}
+
+/*About Page Style*/
+
+.about{
+  position: absolute;
+  border: solid olivedrab;
+  padding: 50px;
+  margin: 30px;
+  color:fuchsia;
+  border-radius: 10%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  left: 40%;
 }
 
-.App-link {
-  color: #61dafb;
+.about .a_btn{
+  padding: 2px;
+  margin: 5px;
+  background-color: gray;
+  color: aqua;
+  border-radius: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*NotFound Page Style*/
+
+.notfound{
+  position: absolute;
+  border: solid yellowgreen;
+  padding: 10px;
+  margin: 50px;
+  left: 40%;
+  color: hotpink;
+  border-radius: 10%;
 }
